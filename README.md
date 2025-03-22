@@ -1,4 +1,6 @@
-#### Run App: 
+*This repository is for testing function calling on open-source models using the LMStudio SDK.*
+
+#### Run: 
 ```sh
 $ pyhon -m venv .venv
 $ .venv\Scripts\activate.bat
@@ -6,7 +8,7 @@ $ pip install requirements.txt
 # $ python simple_test.py
 $ python test2_lmStudio_SDK_function_call.py
 ```
-### showing logs
+### Showing Logs:
 ```sh
 $ lms #shows all related commands
 $ lms log stream #shows lmStudio server logs
@@ -26,5 +28,8 @@ def create_file(name: str, content: str):
         return "Error: {exc!r}"
     return "File created."
 ```
+
+Model: **gemma-3-4b-it**
+
 <img src="results.gif" width="600" height="400" />
 
